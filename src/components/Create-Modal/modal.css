@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lobster+Two:ital@1&display=swap');
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+.modal-overlay .modal-body {
+    background-color: white;
+    padding: 24px;
+    width: 60%;
+
+    border-radius: 4%;
+    border-style: solid;
+    border-color: #4287f5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-overlay .modal-body h2 {
+    font-size: 32px;
+}
+
+.modal-overlay .modal-body .input-container {
+    width: calc(100% - 24px);
+}
+
+.modal-overlay .modal-body input {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+.modal-overlay .modal-body label {
+    color: #242424;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.modal-overlay .modal-body .btn-secondary {
+    color: black;
+    font-size: 80%;
+    background-color: #6a8afd;
+    border-radius: 4%;
+    position: initial;
+    width: 10%;
+    min-width: 45px;
+    margin-top: 32px;
+    font-family: 'Anton', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay .modal-body .modal-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.modal-overlay .modal-body .modal-header .title {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+}
+
+.modal-overlay .modal-body .modal-header .btn-cancel {
+    display: flex;
+    width: 40%;
+    justify-content: right;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.modal-overlay .modal-body .modal-header .btn-cancel .btn-close {
+    border: none;
+    position: initial;
+    padding: 0%;
+    width: 0%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.modal-overlay .modal-body .modal-header .btn-cancel .btn-close .icon-remove {
+    color: red;
+    rotate: 45deg;
+}
+
+.modal-overlay .modal-body .modal-header .btn-cancel .btn-close .icon-remove:hover {
+    color: rgb(185, 0, 0);
+}
+
+.modal-overlay .modal-body .btn-post {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+.modal-overlay .modal-body .btn-secondary:hover {
+    background-color: #5168fa;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+}
+
+.input[type='text'] {
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #4287f5;
+    background-color: #e6f0ff;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.input[type="text"]:focus {
+    outline: none;
+    border-color: #4287f5;
+    box-shadow: 0 0 0 2px rgba(66, 135, 245, 0.2);
+}
+
+.input[type='file'] {
+    display: none;
+}
+
+.input-file {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-label {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.selected-image {
+    position: absolute;
+    border: #0b1eee 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-file {
+    font-family: 'Anton', sans-serif;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #6a8afd;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.label-file:hover {
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+    background-color: #5168fa;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.input-date {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.input-date label {
+    color: #333333;
+    font-weight: bold;
+}
+
+.input-date input[type="date"] {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #0b1eee;
+    background-color: #e6f0ff;
+    color: #333333;
+    width: 40%;
+
+}
+
+.input-date input[type="date"]:focus {
+    outline: none;
+    border-color: #4287f5;
+    box-shadow: 0 0 0 2px rgba(66, 135, 245, 0.2);
+}
+
+.disabled {
+    cursor: default;
+}

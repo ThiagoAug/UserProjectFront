@@ -1,0 +1,12 @@
+.side-container{
+    display: flex;
+}
+  
+.container button {
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    transition: all 0.1s linear 0.1s;
+}

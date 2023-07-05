@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.card {
+    width: 360px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 10px;
+
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.card .info-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card .info-container .tools-group {
+    display: flex; 
+    gap: 10px;
+  }
+  
+  .card .info-container .update-button,
+  .card .info-container .delete-button {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    align-items: center;
+  }
+  
+  .card .info-container .update-icon,
+  .card .info-container .delete-icon {
+    display: flex;
+  }
+  
+  .card .info-container .delete-button {
+    color: red;
+    margin-right: 20px; 
+  }
+  
+  .card .info-container .update-button {
+    color: blue;
+    margin-left: 15px; 
+  }
+
+.card .info {
+    flex-grow: 1;
+}
+
+.image-conteiner-total {
+    
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    width: 100px;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.selected-image {
+    position: absolute;
+    border: #0b1eee 2px;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card .birthday {
+    font-size: 14px;
+    color: #999;
+}

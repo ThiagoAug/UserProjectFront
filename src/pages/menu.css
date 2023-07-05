@@ -1,0 +1,66 @@
+.container {
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 540px;
+    width: 100vw;
+  }
+  
+  .scrollable {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    height: 600px;
+    width: 100%;
+    max-width: 1420px;
+  }
+  
+  .dashboard {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .card {
+    width: 360px;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  .search-space {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .input-search {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 12px;
+    width: 40%;
+    min-width: 380px;
+  }
+  
+  .input-searchbar {
+    width: 100%;
+    border-radius: 12px;
+    height: 30px;
+    font-size: 24px;
+  }
+  

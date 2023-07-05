@@ -1,0 +1,59 @@
+.pro-sidebar {
+  height: 130vh;
+  width: 4%;
+  border-right: 0.5px solid #4755ef;
+
+  .collapsed {
+    width: 4%;
+    min-width: 4%;
+  }
+}
+
+.pro-sidebar-inner {
+  background-color: #5168fa !important;
+}
+
+.pro-inner-item {
+  padding: 15px;
+  background: transparent url('../../assets/Dashboard-icon/Dashboard-icon2x.png') 0% 0% no-repeat;
+}
+
+.logo-sidebar {
+  padding: 21px;
+}
+
+.logo-burger {
+  height: 2.5em !important;
+  width: 2.5em !important;
+  padding: 17px !important;
+}
+
+.icon-actions {
+  color: black;
+  height: 2.5em !important;
+  width: 2.5em !important;
+  padding: 17px !important;
+}
+
+.side-bar {
+  color: #0512a2;
+  width: 72px !important;
+  height: 100% !important;
+  background: #0512a2 0% 0% no-repeat padding-box;
+  border: 0.5px solid #0512a2;
+  opacity: 1;
+  z-index: -1;
+}
+
+.pro-item-content {
+  margin-left: 45px !important;
+}
+
+
+
+.btn-space {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
